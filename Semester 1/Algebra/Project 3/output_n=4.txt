@@ -1,0 +1,4 @@
+For n = 4 there are 20040 bases so I cannot upload the file.txt of the output beacuse it is bigger than 1 MB.
+
+If you run it it will create that file with all the bases
+

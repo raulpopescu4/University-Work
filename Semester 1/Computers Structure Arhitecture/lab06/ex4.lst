@@ -1,0 +1,47 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; A byte string s is given. Build the byte string d such that every byte d[i] is equal to the count of ones in the corresponding byte s[i] of s
+    12                                  segment data use32 class=data
+    13 00000000 0519377F                    s db  5, 25, 55, 127
+    14                                      l equ $-s
+    15 00000004 <res 00000001>              d resb 1
+    16                                  
+    17                                  
+    18                                  segment code use32 class=code
+    19                                      start:
+    20 00000000 B800000000                      mov eax, 0
+    21 00000005 BB00000000                      mov ebx, 0
+    22 0000000A B900000000                      mov ecx, 0
+    23                                             
+    24 0000000F BE[00000000]                    mov esi, s
+    25 00000014 BF[04000000]                    mov edi, d
+    26 00000019 FC                              cld
+    27 0000001A B904000000                      mov ecx, l
+    28                                          parsing_loop:
+    29 0000001F AC                                  lodsb
+    30 00000020 89CB                                mov ebx, ecx
+    31 00000022 B908000000                          mov ecx, 8
+    32 00000027 BA00000000                          mov edx, 0
+    33                                              value_loop:
+    34 0000002C D0E8                                    shr al, 1
+    35 0000002E 80D200                                  adc dl, 0 
+    36 00000031 E2F9                                loop value_loop
+    37 00000033 89D9                                mov ecx, ebx
+    38 00000035 88D0                                mov al, dl
+    39 00000037 AA                                  stosb
+    40 00000038 E2E5                            loop parsing_loop
+    41                                          
+    42                                          
+    43                                      
+    44                                          
+    45                                          
+    46 0000003A 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    47 0000003C FF15[00000000]                  call    [exit]       ; call exit to terminate the program

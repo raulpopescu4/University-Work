@@ -1,0 +1,8 @@
+﻿  App.cpp
+  ExtendedTest.cpp
+  Set.cpp
+  SetIterator.cpp
+  ShortTest.cpp
+  Generating Code...
+Z:\FACULTA2021_2022\SEM2\DSA\LAB1 - Copy\Set\Set.cpp(75): warning C4715: 'Set::add': not all control paths return a value
+  LAB1.vcxproj -> Z:\FACULTA2021_2022\SEM2\DSA\LAB1 - Copy\Set\x64\Debug\LAB1.exe

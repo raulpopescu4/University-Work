@@ -1,0 +1,3 @@
+Z:/FACULTA2021_2022/SEM2/DSA/Bag/cmake-build-debug/CMakeFiles/Bag.dir
+Z:/FACULTA2021_2022/SEM2/DSA/Bag/cmake-build-debug/CMakeFiles/edit_cache.dir
+Z:/FACULTA2021_2022/SEM2/DSA/Bag/cmake-build-debug/CMakeFiles/rebuild_cache.dir

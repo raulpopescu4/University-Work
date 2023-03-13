@@ -1,0 +1,60 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                     
+    11                                  ; Two byte strings S1 and S2 are given, having the same length. Obtain the string D in the following way: each element found on the even positions of D is the sum of the corresponding elements from S1 and S2, and ea
+    12                                  segment data use32 class=data
+    13 00000000 0503020804                  s1 db 5, 3, 2, 8, 4
+    14 00000005 0402070902                  s2 db 4, 2, 7, 9, 2
+    15                                      l equ $-s2
+    16 0000000A <res 00000001>              d resb 1
+    17                                  
+    18                                  
+    19                                  segment code use32 class=code
+    20                                      start:
+    21 00000000 B800000000                      mov eax, 0
+    22 00000005 BB00000000                      mov ebx, 0
+    23 0000000A B900000000                      mov ecx, 0
+    24 0000000F BA00000000                      mov edx, 0
+    25                                          
+    26 00000014 B905000000                      mov ecx, l 
+    27 00000019 BA00000000                      mov edx, 0
+    28 0000001E E331                            jecxz end_loop
+    29                                          start_loop:
+    30 00000020 B000                                mov al, 0
+    31 00000022 B300                                mov bl, 0
+    32 00000024 8A82[00000000]                      mov al, [s1 + edx]
+    33 0000002A 8A9A[05000000]                      mov bl, [s2 + edx]
+    34 00000030 F7C201000000                        test edx, 1
+    35                                              
+    36 00000036 7502                                jnz odd_number
+    37 00000038 740A                                jz even_number
+    38                                              
+    39                                              odd_number:
+    40 0000003A 28D8                                    sub al,bl
+    41 0000003C 8882[0A000000]                          mov [d+edx], al
+    42 00000042 EB0A                                    jmp end_if
+    43                                              
+    44                                              even_number:
+    45 00000044 00D8                                    add al,bl
+    46 00000046 8882[0A000000]                          mov [d+edx], al
+    47 0000004C EB00                                    jmp end_if
+    48                                              
+    49                                              
+    50                                              end_if:
+    51 0000004E 42                                      inc edx
+    52 0000004F E2CF                            loop start_loop
+    53                                          end_loop
+    53          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    54                                              
+    55                                              
+    56                                      
+    57                                          
+    58 00000051 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    59 00000053 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

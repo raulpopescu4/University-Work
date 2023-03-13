@@ -1,0 +1,70 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit              
+     8                                  import exit msvcrt.dll   
+     9                                                            
+    10                                  
+    11                                  ; 18. Given the word A, compute the doubleword B as follows:
+    12                                  ; the bits 0-3 of B have the value 0;
+    13                                  ; the bits 4-7 of B are the same as the bits 8-11 of A
+    14                                  ; the bits 8-9 and 10-11 of B are the invert of the bits 0-1 of A (so 2 times) ;
+    15                                  ; the bits 12-15 of B have the value 1
+    16                                  ; the bits 16-31 of B are the same as the bits 0-15 of B.
+    17                                  segment data use32 class=data
+    18 00000000 C41C                        A dw 0001110011000100b
+    19 00000002 00000000                    B dd 0b
+    20                                  
+    21                                  
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                      
+    25 00000000 B800000000                      mov eax, 0
+    26 00000005 BB00000000                      mov ebx, 0
+    27 0000000A B900000000                      mov ecx, 0
+    28 0000000F BA00000000                      mov edx, 0
+    29                                          
+    30 00000014 66A1[00000000]                  mov ax, [A]
+    31 0000001A B104                            mov cl, 4                                ; 4-7 11110000 of bl                ; the bits 0-3 of B have the value 0
+    32 0000001C 66D3C8                          ror ax, cl                               ; 8-11 of ax 0000111100000000       ; the bits 4-7 of B are the same as the bits 8-11 of A
+    33 0000001F 6625F000                        and ax, 0000000011110000b
+    34 00000023 88C3                            mov bl, al
+    35                                          
+    36 00000025 B800000000                      mov eax, 0
+    37 0000002A 66A1[00000000]                  mov ax, [A]
+    38 00000030 6683E003                        and ax, 0000000000000011b                    ; 0-1 of A inverted 11           ; the bits 8-9 and 10-11 of B are the invert of the bits 0-1 of A (so 2 times)
+    39 00000034 B102                            mov cl, 2                                    ; 8-11 of bx 
+    40 00000036 66D3E0                          shl ax, cl
+    41 00000039 668B0D[00000000]                mov cx, [A]
+    42 00000040 6683E103                        and cx, 0000000000000011b
+    43 00000044 6609C8                          or ax, cx
+    44 00000047 66F7D0                          not ax
+    45 0000004A 6683E00F                        and ax, 0000000000001111b
+    46 0000004E B108                            mov cl, 8
+    47 00000050 66D3E0                          shl ax, cl
+    48 00000053 6609C3                          or bx, ax 
+    49                                          
+    50 00000056 B800000000                      mov eax, 0
+    51 0000005B B900000000                      mov ecx, 0
+    52 00000060 6683C80F                        or ax, 1111b                            ; the bits 12-15 of B have the value 1
+    53 00000064 B10C                            mov cl, 12
+    54 00000066 66D3E0                          shl ax, cl
+    55 00000069 6609C3                          or bx, ax
+    56                                          
+    57 0000006C B800000000                      mov eax, 0
+    58 00000071 B900000000                      mov ecx, 0
+    59 00000076 6609D8                          or ax, bx                             ; the bits 16-31 of B are the same as the bits 0-15 of B.
+    60 00000079 B110                            mov cl, 16
+    61 0000007B D3E0                            shl eax, cl
+    62 0000007D 09C3                            or ebx, eax 
+    63                                          
+    64                                          
+    65                                          
+    66                                          
+    67                                      
+    68                                          
+    69 0000007F 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    70 00000081 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

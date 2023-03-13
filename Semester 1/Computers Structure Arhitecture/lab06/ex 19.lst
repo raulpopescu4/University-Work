@@ -1,0 +1,69 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                      
+    11                                      ; Being given two strings of bytes, compute all positions where the second string appears as a substring in the first string.
+    12                                  segment data use32 class=data
+    13 00000000 010502090B05070502-         s db 1, 5, 2, 9, 11, 5, 7, 5, 2, 9, 9, 4, 6
+    13 00000009 09090406           
+    14                                      ls equ $-s
+    15                                      
+    16 0000000D 050209                      subs db 5, 2, 9
+    17                                      lsubs equ $-subs
+    18                                      
+    19 00000010 <res 00000002>              poss resb 2
+    20                                  
+    21                                  
+    22                                  segment code use32 class=code
+    23                                      start:
+    24 00000000 B800000000                      mov eax, 0
+    25 00000005 BB00000000                      mov ebx, 0
+    26 0000000A B900000000                      mov ecx, 0
+    27 0000000F BA00000000                      mov edx, 0
+    28                                          
+    29 00000014 BE[00000000]                    mov esi, s
+    30 00000019 B90D000000                      mov ecx, ls
+    31 0000001E BA[10000000]                    mov edx, poss
+    32                                          
+    33 00000023 83E903                          sub ecx, lsubs
+    34 00000026 83F900                          cmp ecx, 0
+    35 00000029 7C30                            jl exit_program
+    36                                          
+    37                                          loop_program:
+    38 0000002B BF[0D000000]                        mov edi, subs
+    39 00000030 89F3                                mov ebx, esi
+    40                                              
+    41 00000032 51                                  push ecx
+    42 00000033 B903000000                          mov ecx, lsubs
+    43 00000038 FC                                  cld
+    44                                              
+    45 00000039 F3A6                                repe cmpsb
+    46 0000003B 7402                                jz substring_found
+    47 0000003D EB10                                jmp substring_not_found
+    48                                              
+    49                                              substring_found:
+    50 0000003F B903000000                              mov ecx, lsubs
+    51 00000044 89D7                                    mov edi, edx
+    52                                                  again:
+    53 00000046 AA                                          stosb
+    54 00000047 FEC0                                        inc al 
+    55 00000049 E2FB                                    loop again   
+    56 0000004B 2C03                                    sub al, lsubs
+    57 0000004D 89FA                                    mov edx, edi
+    58                                              substring_not_found:
+    59 0000004F 89DE                                    mov esi, ebx
+    60 00000051 46                                      inc esi
+    61 00000052 59                                      pop ecx
+    62 00000053 49                                      dec ecx
+    63 00000054 FEC0                                    inc al
+    64 00000056 83F900                                  cmp ecx,0
+    65 00000059 7DD0                                    jnl loop_program
+    66                                          exit_program:
+    67 0000005B 6A00                                push    dword 0      ; push the parameter for exit onto the stack
+    68 0000005D FF15[00000000]                      call    [exit]       ; call exit to terminate the program

@@ -1,0 +1,123 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                  
+    14                                      ; 28. Being given a string of bytes and a substring of this string, eliminate all occurrences of this substring from the initial string.
+    15                                      ; input: 1, 5, 2, 9, 11, 5, 7, 5, 2, 9, 9, 4, 6
+    16                                      ; output: 1, 11, 5, 7, 9, 4, 6
+    17                                      
+    18                                      ; the given string
+    19 00000000 010502090B05070502-         string db 1, 5, 2, 9, 11, 5, 7, 5, 2, 9, 9, 4, 6
+    19 00000009 09090406           
+    20                                      stringlength equ $-string
+    21                                      
+    22                                      ; the given substring
+    23 0000000D 050209                      substring  db 5, 2, 9
+    24                                      substringlength equ $-substring
+    25                                      
+    26                                      ; the newly formed string
+    27 00000010 0D                          newstring db stringlength
+    28                                      
+    29                                      ; C++ variant
+    30                                      
+    31                                      ; char string[], substring[], newstring[];
+    32                                      ; for(i=0; i<len(string)-len(substring); i++){
+    33                                      ;       int auxi=i, auxj=0, contor=len(substring);
+    34                                      ;       while(string[auxi]==substring[auxj]){
+    35                                      ;           contor--;
+    36                                      ;           auxi++; auxj++;
+    37                                      ;           }
+    38                                      ;       if (contor!=0)
+    39                                      ;           newstring[] += string[auxi]
+    40                                      ; }
+    41                                      ; for(i; i<len(string); i++)
+    42                                      ;        newstring[] += string[i]
+    43                                  
+    44                                  ; our code starts here
+    45                                  segment code use32 class=code
+    46                                      start:
+    47                                          ; NASM implementation
+    48                                          
+    49 00000000 BA00000000                      mov edx, 0 ; length of the new string
+    50                                          
+    51 00000005 BE[00000000]                    mov esi, string  ; store the FAR address of the string
+    52 0000000A B90D000000                      mov ecx, stringlength  ; store the length of the given string in ecx
+    53                                  
+    54 0000000F 83E903                          sub ecx, substringlength ; subtract substring length to prevent looking beyond the string length
+    55 00000012 83F900                          cmp ecx, 0 ; check if the substring fits in the string
+    56 00000015 7C4F                            jl exitProgram ; if not, the substring can never be a part of the string
+    57                                          
+    58                                          repeatProcess:
+    59 00000017 BF[0D000000]                        mov edi, substring  ; store the FAR address of the substring
+    60 0000001C 89F3                                mov ebx, esi ; make a copy of the FAR address of the substring
+    61                                              ; because we are using it later to copy each byte from the old string to the new one
+    62                                              
+    63 0000001E 51                                  push ecx ; we need one register free, in order to check if the actual sequence is a substring
+    64 0000001F B903000000                          mov ecx, substringlength ; we check if the substring matches the current sequence 
+    65                                              
+    66 00000024 FC                                  cld ; clear the direction flag in order to be sure the string is being parsed the right way
+    67                                              
+    68 00000025 F3A6                                repe cmpsb ; compare substring at edi, with the string in esi
+    69 00000027 7413                                jz substringFound ; if ZF = 1 then substring is found within string
+    70                                              
+    71                                              ; code to be executed if the sequence checked is not a substring 
+    72 00000029 59                                  pop ecx ; get back the length of the given string from the stack
+    73 0000002A 49                                  dec ecx ; we just checked one element, so we decrement the step counter
+    74                                              
+    75 0000002B 89DE                                mov esi, ebx ; we get the address of the byte we just checked(the first of the sequence)
+    76 0000002D AC                                  lodsb ; we have now the byte from the old string in AL
+    77 0000002E 43                                  inc ebx ; we get the address of the next byte we want to check
+    78                                              
+    79 0000002F BE[10000000]                        mov esi, newstring ; store the FAR address of the new string
+    80 00000034 880416                              mov byte [esi+edx], al ; store the byte from AL in the new string on a new position
+    81 00000037 42                                  inc edx ; increment the length of the new string
+    82                                              
+    83 00000038 89DE                                mov esi, ebx ; we get the address of the next byte we want to check
+    84                                              
+    85 0000003A EB04                                jmp substringNotFound
+    86                                  
+    87                                              substringFound:
+    88 0000003C 59                                  pop ecx ; get back the length of the given string from the stack
+    89 0000003D 83E903                              sub ecx, substringlength ;  we just checked substringlength elements, so we subtract substringlength value from the step counter
+    90                                              
+    91                                              substringNotFound:
+    92                                  
+    93 00000040 83F900                          cmp ecx, 0 ; check how many steps have been done
+    94 00000043 7DD2                            jnl repeatProcess ; if there are more steps to be done
+    95                                          
+    96                                          ; we are checking only stringlength-substringlength elements of the string, so there remain
+    97                                          ; substringlength bytes to be copied in the end of the string
+    98                                          
+    99 00000045 B9[0D000000]                    mov ecx, substring 
+   100 0000004A 29F1                            sub ecx, esi ; see how many elements to be checked are left
+   101                                          
+   102 0000004C 83F900                          cmp ecx, 0 ; check if the substring fits in the string
+   103 0000004F 7E15                            jle exitProgram ; if not, the substring can never be a part of the string
+   104                                          
+   105 00000051 89F3                            mov ebx, esi ; in ebx we have the address of the first byte left to be copied
+   106                                          
+   107                                          repeatLastProcess:
+   108 00000053 89DE                                mov esi, ebx ; copy the address of the byte to be copied from the old string
+   109 00000055 AC                                  lodsb ; we have now the byte from the old string in AL
+   110 00000056 BE[10000000]                        mov esi, newstring ; store the FAR address of the newstring in esi
+   111 0000005B 880416                              mov byte [esi+edx], al ; store the byte from AL in the new string
+   112 0000005E 42                                  inc edx ; increment the length of the new string
+   113 0000005F 49                                  dec ecx ; we just checked one element, so we decrement the step counter
+   114 00000060 43                                  inc ebx ; we get the address of the next byte we want to check
+   115                                              
+   116 00000061 83F900                              cmp ecx, 0 ; check how many steps have been done
+   117 00000064 7FED                                jnle repeatLastProcess  ; if there are more steps to be done
+   118                                          
+   119                                          exitProgram:
+   120                                          ; exit(0)
+   121 00000066 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   122 00000068 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
