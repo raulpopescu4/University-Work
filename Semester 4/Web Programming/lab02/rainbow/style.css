@@ -1,10 +1,11 @@
-div{
+div {
     width: 500px;
     height: 250px;
     opacity: 1;
 
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -17,27 +18,27 @@ div{
     clip-path: polygon(0 calc(var(--maxheight) - var(--minheight)), 100% 0, 100% 100%, 0 100%);
 }
 
-.red{
-    background-image: linear-gradient(to right, red , orange);
+.red {
+    background-image: linear-gradient(to right, red, orange);
 
 }
 
-.orange{
-    background-image: linear-gradient(to right, orange , yellow);
+.orange {
+    background-image: linear-gradient(to right, orange, yellow);
 }
 
-.yellow{
-    background-image: linear-gradient(to right, yellow , green);
+.yellow {
+    background-image: linear-gradient(to right, yellow, green);
 }
 
-.green{
-    background-image: linear-gradient(to right, green , blue);
+.green {
+    background-image: linear-gradient(to right, green, blue);
 }
 
-.blue{
-    background-image: linear-gradient(to right, blue , indigo);
+.blue {
+    background-image: linear-gradient(to right, blue, indigo);
 }
 
-.indigo{
+.indigo {
     background-image: linear-gradient(to right, indigo, violet);
 }

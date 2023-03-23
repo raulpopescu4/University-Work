@@ -1,13 +1,13 @@
-img{
+img {
     width: 300px;
     height: 300px;
     opacity: 0.5;
 }
 
-img:hover{
+img:hover {
     opacity: 1;
 }
 
-td, tr{
+td, tr {
     border: 2px solid gray;
 }
