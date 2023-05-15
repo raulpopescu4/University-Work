@@ -1,0 +1,71 @@
+/*.desktop1{*/
+/*    background: violet;*/
+/*    position: absolute;*/
+/*    margin: 0px;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.desktop2{*/
+/*    background: darkcyan;*/
+/*    position: absolute;*/
+/*    -webkit-transition: all .3s linear 0s;*/
+/*    transition: all .3s linear 0s;*/
+/*    margin: 0px;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*;*/
+/*}*/
+
+/*.desktop3{*/
+/*    background: antiquewhite;*/
+/*    position: absolute;*/
+/*    -webkit-transition: all .3s linear 0s;*/
+/*    transition: all .3s linear 0s;*/
+/*    margin: 0px;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.desktop4{*/
+/*    background: sienna;*/
+/*    position: absolute;*/
+/*    -webkit-transition: all .3s linear 0s;*/
+/*    transition: all .3s linear 0s;*/
+/*    margin: 0px;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x:hidden;
+    position:relative;
+}
+
+.wrapper {
+    height: 100%;
+    background: #263729;
+}
+
+.desktop {
+    float:left;
+    background: #992213;
+    min-height: 100%;
+    padding-top: 30px;
+}
+
+#desktop-1{
+    background: cadetblue;
+}
+#desktop-2{
+    background: slateblue;
+}
+#desktop-3 {
+    background: plum;
+}
+
+#desktop-4{
+    background: lightpink;
+}

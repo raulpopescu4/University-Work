@@ -1,0 +1,41 @@
+.menu{
+    overflow: hidden;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+
+}
+
+.dropdown_content p{
+    color: black;
+    padding: 1px 2px;
+    display: inline-block;
+    flex-direction: row;
+}
+
+.menu:hover .dropdown {
+    display: block;
+}
+
+
+.dropdown_content {
+    display: none;
+    position: inherit;
+    z-index: 0;
+}
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown-content p:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
