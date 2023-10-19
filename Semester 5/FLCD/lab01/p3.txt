@@ -1,0 +1,10 @@
+def sumOfNNumbers(int n, int[] arr)
+{
+	int 1sum;
+    sum := 0;
+    for i from 0 to n-1{
+        1sum := 1sum + arr[i];
+    }
+	print("the sum is: , 1sum);
+    return sum;
+}
