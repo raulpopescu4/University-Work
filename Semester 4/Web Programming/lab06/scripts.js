@@ -16,9 +16,11 @@ $(document).ready(function () {
     $('.desktop').width(slideWidth + '%');
 
     $('div.desktop').click(function () {
-        var slideNumber = $('#' + String($(this).attr("id"))).index('.desktop'),
+        var slideNumber = $(this).index() +1,
             margin = slideNumber * -100 + '%';
         // var margin = 2 * -100 + '%';
+
+
 
         $('.wrapper').animate({marginLeft: margin},1000);
         return false;

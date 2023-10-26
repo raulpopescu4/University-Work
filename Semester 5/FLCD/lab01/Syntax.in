@@ -2,7 +2,7 @@ Sintactical rules:
 
 program ::= "def" "(" decllist ")" "{" cmpdstmt "}"
 
-decllist ::= declaration | declaration with multiple identifiers";" 
+decllist ::= declaration | declaration ";" decllist
 
 declaration ::= type "space" IDENTIFIER
 
