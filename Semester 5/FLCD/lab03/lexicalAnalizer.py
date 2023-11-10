@@ -63,6 +63,7 @@ class LexicalAnalyzer:
 
         with open("ST.out", "w") as st_out:
             st_out.write(str(self.__symbol_table))
+            st_out.write("This is a hash table with coalesced chaining")
 
         if error_flag:
             print("Lexical error(s) found")
