@@ -41,15 +41,15 @@ if __name__ == "__main__":
     # test_hash_table(symbol_table)
 
     lexical_analyzer = LexicalAnalyzer(symbol_table)
-    # with open("p1", 'r') as file:
-    #     lines = file.readlines()
-    # concatenated_string = ''.join(lines)
-    # lexical_analyzer.lexical_analysis(concatenated_string)
-
-    with open("p2", 'r') as file:
+    with open("p1", 'r') as file:
         lines = file.readlines()
     concatenated_string = ''.join(lines)
     lexical_analyzer.lexical_analysis(concatenated_string)
+
+    # with open("p2", 'r') as file:
+    #     lines = file.readlines()
+    # concatenated_string = ''.join(lines)
+    # lexical_analyzer.lexical_analysis(concatenated_string)
 
     # with open("p3", 'r') as file:
     #     lines = file.readlines()

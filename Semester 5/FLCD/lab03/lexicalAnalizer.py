@@ -52,9 +52,9 @@ class LexicalAnalyzer:
                 if self.__symbol_table.search(token) == (-1, -1):
                     position = self.__symbol_table.add(token)
                     self.__pif.append(("Identifier", f"({position[0]}, {position[1]})"))
-                else:
-                    position = self.__symbol_table.search(token)
-                    self.__pif.append(("Identifier", f"({position[0]}, {position[1]})"))
+                # else:
+                #     position = self.__symbol_table.search(token)
+                #     self.__pif.append(("Identifier", f"({position[0]}, {position[1]})"))
 
             else:
 
@@ -63,7 +63,7 @@ class LexicalAnalyzer:
 
         with open("ST.out", "w") as st_out:
             st_out.write(str(self.__symbol_table))
-            st_out.write("This is a hash table with coalesced chaining")
+            st_out.write("\nThis is a hash table with coalesced chaining")
 
         if error_flag:
             print("Lexical error(s) found")

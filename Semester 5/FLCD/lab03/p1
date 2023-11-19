@@ -1,4 +1,4 @@
-def gcd ( int a, int b )
+def gcd ( int a , int b )
 {
 	int t ;
     while ( b !=  ) {
