@@ -1,0 +1,41 @@
+Confidence Internals
+	X - charactheristic of a pop.
+	    -it has a pdf: fx(x, theta) theta - unkwon parameters = target parameters
+
+	Goal: estimate theta
+	Make a selection of volum n
+	=> obtain X1, X2, X3, ..., Xn  sel. variables
+	that are indep & ident. distrib. with X
+	(X1, X2, ..., Xn have the same pdf as X)
+
+
+Methods:
+	1. use a sel. function
+	bar theta = bar theta(X1, X2, ..., Xn)
+
+	2. find (bar theta l), (bar theta h) such that P((bar theta l) < theta < (bar theta h)) = 1 - alpha
+
+
+Therminology:
+	((bar theta l), (bar theta h)) - 100(1 - alpha)% CI for theta
+	1 - alpha = confidence level/ coeff
+	alpha = significance level (L6)
+
+	Usually 1 - alpha belongs to [0, 1] but we take the values 0,95 - 0,99
+
+
+	x = vector of data/ sample
+	n = sample size (length(x))
+	miu = population mean (theoretical mean)
+	bar x = sample mean (mean(x))
+	sigma squared = population variance 
+	s squared = sample variance (var(x))
+	sigma = population std. dev.
+	s = sample std. dev (std(x))
+
+	quantiles:
+		Z alpha - quantile of order 
+		alpha of the N(0, 1) law
+		
+		kai squared(X)n - quantile of order n of the chai squared 
+

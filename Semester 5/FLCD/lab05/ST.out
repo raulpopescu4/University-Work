@@ -1,1 +1,0 @@
-SymbolTable: [['mod'], [], ['gcd'], ['def'], [], [], [], [], [], ['1'], ['2'], ['3', 'int'], ['return'], [], [], [], ['t'], ['a', 'while'], ['b'], []]This is a hash table with coalesced chaining

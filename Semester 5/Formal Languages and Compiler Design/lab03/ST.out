@@ -1,0 +1,2 @@
+SymbolTable: [[], [], ['gcd'], [], [], [], [], [], [], ['1'], ['2'], ['3'], [], [], [], [], ['t'], ['a'], ['b'], []]
+This is a hash table with coalesced chaining

@@ -1,0 +1,8 @@
+
+%sum(i,o)
+
+sum(0,0).
+sum(N,R):- N1 is N-1, sum(N1,R1), R is R1+N.
+
+sum2(A,A,A).
+sum2(A,B,R):- B1 is B-1, sum2(A,B1,R1), R is R1+B.

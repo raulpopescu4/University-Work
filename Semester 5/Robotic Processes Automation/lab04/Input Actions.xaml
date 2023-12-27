@@ -1,0 +1,213 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Input_Actions" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,2355" sap2010:WorkflowViewState.IdRef="Input_Actions_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Input_Actions" sap:VirtualizedContainerService.HintSize="554,2290" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd1:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="extractedData" />
+      <Variable x:TypeArguments="x:String" Name="outputString">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Spotify Premium" sap:VirtualizedContainerService.HintSize="512,1394" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="006245cf-c1c5-4bcf-880b-22c1d313eb6e" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1105" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Daily Mix 1'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="006245cf-c1c5-4bcf-880b-22c1d313eb6e" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="135, 889, 80, 27" FriendlyName="'Daily Mix 1'" FullSelectorArgument="&lt;ctrl name='Spotify - Web Player: Music for everyone' role='document' /&gt;&lt;ctrl name='Made For Raul Popescu' role='pane' /&gt;&lt;ctrl name='Daily Mix 1' role='link' /&gt;&lt;ctrl role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Spotify - Web Player: Music for everyone' role='document' /&gt;&lt;ctrl name='Made For Raul Popescu' role='pane' /&gt;&lt;ctrl name='Daily Mix 1' role='link' /&gt;&lt;ctrl role='grouping' automationid='' check:text='Daily Mix 1' /&gt;" Guid="cc540649-e1bb-439f-a6ed-650c297c8d96" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAfCAYAAAB59OpuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARkSURBVGhD7ZfLK31RFMd//wTuGH+FYqpIChNKUuRZzCjKwKMMiCiPgcfAwESkGEheAzEhrxAirzAg7/f69V2s89vn3H3vPffeU344q77prr33Wnt/9tp7H3+ioqIoMjIyoCIiIlzZEAO1C1WkC+TqQwbQUMCKdIF/q7yAinTgnJJuIj9FPoGKdEBc+VZAoKp0AVyZFRRQnXRBf7PCBupPk5OT9Pr6SmNjY9p2X9JN1AkNDAzQ8/MzLS0tUXR0tLZPuDIB3draIqu9vLzQzs4O1dbWmhYdSOnp6XRycsIxjo6OKCUlhRcEgx/tunGBJDFgh4eHlJSU5NUnMzOTzs/PP3sRj4Ff1nd1dUUFBQVe4+wqJiaGFhYWOBZiqm1/PB6P8UMHVAyVNjExwcHUAL6EflNTU6YKdRooqq2pqcmrT19fH729vX32+gd0cHDQqFC767AKmzU3N8frgmmBigTo7OwsNyJpVVUV7e/vsx+T6ejoMAUIRk4Dhc3Pz5vaMefNzc3P1g8ToOHKmhsWFFARduX09JTbcPzj4uKopKSENjY26Onpif24GtbW1ignJ8cYhzgwSaoCLSsro93dXf69srJiVAxiIwcMJ0JiiSTGw8MDbzCOb1FRkdFeUVFBt7e3dH9/T9fX19xXgFrzr6+vG7+xwZiDHGX4sG6Jq45XzTZQ1Y+Ow8PD3HZ5eUl5eXk0Pj7OE35/f2e/mADHGH9AsQBUO6AAAECgT319PT0+Ppp8qiQGNnh7e5vzDw0NGe3YBNjy8jLngemAIj/uUawHMUZGRvg03t3d8WbV1dUZMXUSViEBhWQyNzc3VFpayj4JkpiYSN3d3TwRaYc/EFC1GuXo4i8MQHT3nBqjt7eXN0QeJ3mMsCHt7e0BgcInm3pxccEVK3DVnDqFDVSt0Pz8fEpLS+NFy+UspgJXgeK3LAjVJQtqa2szjm5jYyP/BRBUqjpRkQoFFQaYGI84EgublJ2dbQsoNm1mZsY4abh/4+PjTTl1CgtoVlaW1x0qsGCAiqOCSdkFmpGRwT6pUow9Pj7mv5JD8quyxsBxxxjcfaurq/y69/f3c5vMGWN0Y+GLjY01AT04OKDk5GRTTp1UoKrfL1Akq66uNr3ynZ2dlJqaauz+6Ogo9+vq6uL2YIFCzc3NPBYmOaTNKmsMPC64yzEODyOOPArALtDW1lYei0qXjZ2enjbl1CkooDqT71DAU4GKYSKojlCAohr39va4DQvzVyHWGJgPKlMMc0Q/O0ALCwv5CsPaenp6+JrBO4Arp6WlxZTXqpCB4rMIO4dXT+1bU1NDZ2dnDBI7DHiYKCaE/6rQxy7Q4uJivjsRC0dY/DrpYsjdCRANDQ3sCwS0vLzc+GzC51tCQgJvzuLiIvtQMKh0yWuVLaBfJbkH8dLm5uZq+3wXfTlQtZLkuH5nfTlQvMi4e/EhX1lZqe3znfRfHPmfJBeow3KBOiwXqMNygTosF6jDcoE6LBeow3KBOioP/QXfe4P2UG2HOgAAAABJRU5ErkJggg==" InformativeScreenshot="f63b9771842bffcd4f6dbe92b25e5fc0.png" ScopeSelectorArgument="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Premium' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="006245cf-c1c5-4bcf-880b-22c1d313eb6e" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1301, 423, 33, 32" ElementType="Button" FriendlyName="'push button'" FullSelectorArgument="&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='document' /&gt;&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='grouping' /&gt;&lt;ctrl name='Search in playlist' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='document' /&gt;&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='grouping' /&gt;&lt;ctrl name='Search in playlist' role='push button' automationid='' /&gt;" Guid="05636e92-e69f-4a93-9961-5b5c8c44a5ab" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAkCAYAAAAOwvOmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP4SURBVFhHzZZbS1VREMf3tyntHl5Sj0ohiZcoqSTMHsQHezGSHswLRF5CLCksBVM6GmZkWIQQpXm8fq/VzOw168yas/bZxyLo4des//xn1p691qlddDqTMURdXRwtp5R2vs5bCuoZm3c+xqRaAOvyQzFFGv4VZ5SO6A0AjjwUv5nnY5PUEuHJnKtDn2t4LXwZveujidHknEW/SVG4X+zj7Sti0r50UgwWSq3RPj0goDknvZDWsO+urxiyRjZzrhjHrUe8kyJqa4trABtdPslPQ/eLWHBSZKic9ngDzoUiQ/UWqWWNBL2IHlAC5YGcRPtp9UyojoaiCaWhtUb5Bf2KNF/vF5XX1HjToqa1jc4P6Bvd3Wbs+XOz+P69mX371jydnjZ3+/riIUS9t69FatxP6pKvT5JpaTELy8tm7+iI+Pztm/myuel0dm2NakK9pRCfFE6JERKsCa2BhvZ2s/njh9k5ODCPx8ZMTXOz8zKtrWZofNzkwMMaHEz2hvYLQSeFC5oSozV4rf25pSXza3/fNHV0eL7sab51i2rera76ezC4l92Po/TdSZXC1Zs36XoeDA15ed5UMjAyQrXXuroKvDSCQ/HE/DCOw3A1u4eH5nxDQ9E6jBcbG2mo0cnJ/KlYX8Me+/FQly7FwLpMRoA1rmcXFszHjY18vYVrZR+y/vUr/a2U+7IXxPrp18fFAA71CR4U9EUdg7Uv5+d9X9eBphMS+UieCEMFFpl7MjVlcnh99fXOS6q9AFeMVz08MZFYk7SOqJgnTcL6d3p74x/64KCX9/rt+uHwMNW2dnbmPVWTpKOy6mo3pQYLaG1r8AeL/0hu7e6ay9ev5z3G6ivgbe/tmZm5uTgn9nBRInOw9q5PDsFT85r9xrY2+ofx586O6YZPCm/I9fiZ2crl6JSyHz4UXLXcmzU9kzUQn9QxqW5qMlOvXtGDv29vm2X4rKyur9Maf0cL2ax5NDpK6yX4Lp6D/+JinxsiBRqqnBO2iSemt1Ha+RDr4BPTD7+vF69fmzeLi2YcPs737t93+/X299Ngiysr5iycGD3D9jOkMY9rq5NPqqrKjzpvOal9lb8H14nfwmczMwU1CNfJff7o+jwShpLc7ukxfQMDQS9EhBMymJA6KS81D6XzIe3yHMHntST1pFyzxuYTfYv2WRf0sYbonRRRWelrAb1VwPfetkg/Ab5XrwHfv74SI0NaPET6uNb5UmNEb2bfjpKsbS4Uudnl2WOtfa1lT8CPh1JJLwdr7020tpFJ0kn1jPNh/+gE/IHwMKVoHbWvtYwarpd1+ev7j6ChaNKKijw2Rx5oL2q0X6Rf571+BjRdHyaZNP23pO13orLS/AbKFsBYiT0AHgAAAABJRU5ErkJggg==" InformativeScreenshot="6d8103b1041d4347e86542e5508de4a2.png" ScopeSelectorArgument="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Premium' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'grouping'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="006245cf-c1c5-4bcf-880b-22c1d313eb6e" Text="a" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1145, 423, 189, 32" FriendlyName="'grouping'" FullSelectorArgument="&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='document' /&gt;&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='grouping' /&gt;&lt;ctrl idx='143' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='document' /&gt;&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='grouping' /&gt;&lt;ctrl automationid='' role='grouping' /&gt;" Guid="9e6dc4f8-d1e7-49bb-99bd-cfdb114265dd" ImageBase64="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" InformativeScreenshot="f943a5ae6390723817085b6c16927986.png" ScopeSelectorArgument="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Premium' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'row'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+              <ui:GetOCRText.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" />
+                </ActivityFunc>
+              </ui:GetOCRText.OCREngine>
+              <ui:GetOCRText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a684a07f-55b4-4936-b347-e9b612451696" InformativeScreenshot="9db67ef04d1dd63af9064a8ebb0f3703" Selector="&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='document' /&gt;&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='grouping' /&gt;&lt;ctrl idx='15' role='grouping' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetOCRText.Target>
+              <ui:GetOCRText.Text>
+                <OutArgument x:TypeArguments="x:String">[extractedData]</OutArgument>
+              </ui:GetOCRText.Text>
+            </ui:GetOCRText>
+            <uix:NExtractData ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='#' ReferenceIdx='0' Name='#'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Title' ReferenceIdx='1' Name='Title'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Album' ReferenceIdx='2' Name='Album'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-3' ReferenceIdx='3' Name='Column-3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="006245cf-c1c5-4bcf-880b-22c1d313eb6e" Version="V1">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="119, 491, 1350, 1287" ElementType="Table" FriendlyName="'table Daily Mix 1'" FullSelectorArgument="&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='document' /&gt;&lt;ctrl name='Daily Mix 1 | Spotify Playlist' role='grouping' /&gt;&lt;ctrl name='Daily Mix 1' role='table' /&gt;" Guid="68f18b56-32b8-428e-8d6a-49c094fd2803" InformativeScreenshot="8274cc6096c7a6d09ee4bfe624a5283f.png" ScopeSelectorArgument="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Premium' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" FilePath="C:\Users\diana\AppData\Roaming\Spotify\spotify.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATWSURBVFhH1Vdbb1VFFK5KAwotpfQ2e/bscqkFIbUQpFWpNJK0oEnBcmoFWloEBO+JLybqg0aEB9+8YKsxvmlUHtTEaEiABAW8342iCBRKuQT/w/L7Zuacs8/pBk9O+6CTfNn7zKxZ65s136zZp+R/06Lft1QA9wCvAJ8Dp4DLHnxnH8e6gQo/beINzmqBXcAZQAoEbXcDtd5NcQ0OBoCzQFKQQjAKDHp3hTdMmgK86p1MBl4DSr37qzcYMvi7fuJk4n3g30nAaG9s0mRjyIdJbjDoy5vgcBz4436J/gRObJXoLw++s49jSfOSMeDD5TYMVAEXMoYMcHa7w0m8/zoo0bf9Yo5uFHN4g5jPNkj05SaJvu939qe3STT6gERnvD1JZ4PGcQmo8WGzDZ08as4Iwc2RjRK+1CF653IJ1iyU4JY5EjRqUfV1ogwQAXOVBIuMBLfNE71usejHWyXc2ynmUK/LDglxIbkEiN0+rGvoKAfG7CDYm09SouYFoqZVADNFXY9nGvwdR37/DXgPaiS4s1HC59uxEGRqFFkhoSwBZjpbrPBjXWYQKQzfWCOqZIZzOGOWKAWHN4V2pcGqRgk6kZGOBRK034jMzBXVALI11aKmeyIkQfAdGdMPt4j5qi+fxHof3hLInvnjEBT2O3y6TfRDyyV88y4xB+7FXm92+3oKez2CFY3gSYfUxtd9Yj5NSTi8WvQjLZaoqpwNAiBRhgVMKZegrcHZZgWbPRH4cSRDIE2CYrqwQ+ovPyjRxZ1OjFQ8nfw84J78TbvzO5wN7KNz2HcQNR90i962TJSucdlEBqMfsQjOcXGO+fCWwOlM8DQonmMQ4hBW9VirFRlXESyDGJfUu+cdDaLXQnxYdfhyh8sUA5AEARGa/T0SPrVCzEfd+YIc8eEtgb9jAzbN5sNup/Sp2MdryqQOqyDUtWWirgPwzPRh3NrVQSvQRfjcSntcM8eSz5PYsngMxPThEwjgTIfvdGH/KuG0WoJWHLPem20mwmfaJHx2pdPIoy223+55WOtERzKl5aLmKNFP3GprRyztceQQGL8FEIv5eL1Nof3NlYxhJdznNMYA9nPPD99na4BONdlTQ+Fx74POBY4AdZUbI2cLjuYNOlB4lyCudEGh+L7BcWIF5LH6wYuK4yREIYKQOdArejsEWFVlCUUnSGCc/y98eEtg/AUEx3ZVu9pFDy5FYcGZb4qQWugChYYpDxaiNqyYL7p/iYQvrhJzEBWQJZlkSATzLenku2LYh7cE+KmVawAHuqcJIpvq9nUm9ABRBotRepfiFDSDzHwUIJ53K9LpomZjxV2LxLzdBSEjY6wZV76oUj68JcBSfD426O6D99aKfvJ2Cd+622kBBSf6ydeAX/D8DpcTVs1xW4CYIZ4KiFBvapboN/hJJnARyP1uRMcLMQM3mbcazzMrH9+5l3SYBvef/RQidQBSvMAskeb6/MITxx4fNtvQWQ1kr+NiwGAULgMzW8mrT76O2TCwOWZYPEgkeeXE1T9SYTCUN2Ey8boPc+UGo1KAH5BJDiaCfUDBX8YkwU/pJEfFYBgoLHi8YdIW4Jx3Ugz4lbXVuyuuwUEdwCPKfzlJQZJA2z2A8m4m3uBsFpACuDW8O+J/TnmZsY9jPUCln/ZfbyUl/wAv1CA978rAXwAAAABJRU5ErkJggg==" InformativeScreenshot="09ea849d5d480ab1d4c8c867a1a7a102.png" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Premium'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <Assign sap:VirtualizedContainerService.HintSize="512,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[outputString]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[extractedData]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="sd1:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="512,492" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[ExtractDataTable.Rows]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="sd1:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,368" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,276" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[row.Table.Columns]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[outputString]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[outputString + " " + row(item.ToString).ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <ui:WriteTextFile DisplayName="Write Text File" FileName="artists.txt" sap:VirtualizedContainerService.HintSize="512,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[outputString]" />
+  </Sequence>
+</Activity>

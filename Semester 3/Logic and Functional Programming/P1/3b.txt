@@ -1,0 +1,25 @@
+% b. Remove all occurrence of a maximum value from a list on integer numbers
+
+% maximum(A:number, B:number, R:number)
+% maximum(i,i,o)
+
+%maximum(a, b):
+% = a, a >= b
+% = b, otherwise
+
+
+maximum(A,B,A):-A>=B.
+maximum(A,B,B):-B>A.
+
+% maxList(l1l2...ln) = 
+% l1, if n = 1
+% maximum(l1,maxList(l2...ln)), otherwise
+
+maxList([H],H).
+maxList([H|T], R):-
+    maxList(T, RM),
+    maximum(H, RM, R).
+
+main(L, R):-
+    maxList(L,RM),
+    removeOcc(L,RM,R).

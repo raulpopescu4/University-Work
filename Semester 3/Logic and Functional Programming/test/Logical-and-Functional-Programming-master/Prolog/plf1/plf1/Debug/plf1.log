@@ -1,0 +1,6 @@
+﻿  lista.cpp
+c:\users\alex\source\repos\plf1\plf1\lista.h(16): warning C4091: 'typedef ': ignored on left of 'Nod' when no variable is declared
+  plf1.cpp
+c:\users\alex\source\repos\plf1\plf1\lista.h(16): warning C4091: 'typedef ': ignored on left of 'Nod' when no variable is declared
+  Generating Code...
+  plf1.vcxproj -> C:\Users\Alex\source\repos\plf1\Debug\plf1.exe

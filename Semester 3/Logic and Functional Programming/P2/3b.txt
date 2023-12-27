@@ -1,0 +1,21 @@
+% b. For a heterogeneous list, formed from integer numbers and list of numbers, merge all sublists with removing
+%    the double values.
+% [1, [2, 3], 4, 5, [1, 4, 6], 3, [1, 3, 7, 9, 10], 5, [1, 1, 11], 8] =>
+% [1, 2, 3, 4, 6, 7, 9, 10, 11].
+
+% heterList(l1l2...ln) = 
+% = [], if n = 0
+% = myMerge(l1, heterList(l2...ln)), if l1 is a list
+% = heterList(l2...ln), otherwise
+
+% heretList(L:list, R:list)
+% (i,o)
+
+heterList([],[]).
+heterList([H|T],R1):-
+    is_list(H),
+    !,
+    heterList(T,R),
+    myMerge(H,R,R1).
+heterList([_|T],R):-
+    heterList(T,R).
