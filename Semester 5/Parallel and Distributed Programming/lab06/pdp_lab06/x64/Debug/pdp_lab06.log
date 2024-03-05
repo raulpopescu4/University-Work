@@ -1,0 +1,3 @@
+﻿  pdp_lab06.cpp
+D:\Raul\PDP\pdp_lab06\pdp_lab06\pdp_lab06.cpp(90): warning C4715: 'Graph::hamiltonianCycleUtilParallel': not all control paths return a value
+  pdp_lab06.vcxproj -> D:\Raul\PDP\pdp_lab06\x64\Debug\pdp_lab06.exe
