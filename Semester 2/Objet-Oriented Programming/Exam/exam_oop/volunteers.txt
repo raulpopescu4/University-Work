@@ -1,0 +1,9 @@
+aaa,aaa@gmail.com,Software Development;Tech Support,IT
+bbb,bbb@yahoo.com,Recruitment;Employee Training,HR
+ccc,ccc@dadada.com,Public Relations;Social Media
+ggg,ggg@cauit.com,Investment Analysis;Accounting,Finance
+ddd,ddd@uit.com,Investment Analysis;Accounting,Finance
+eee,eee@eee.com,Event Planning;Content Creation,Marketing
+fff,fff@fff.com,Tech Support;Social Media
+aaa,aaa,sa
+asd,asd,asd

@@ -1,0 +1,9 @@
+HotelKeeperImplementation - Meal to be composed and ordered
+HotelKeeperImplementation - Dish order to be made
+HotelKeeperImplementation - Dish ordered
+HotelKeeperImplementation - Meal composed and ordered
+HotelKeeperImplementation - payment method to be set
+HotelKeeperImplementation - payment method set
+HotelKeeperImplementation - payment to be done
+HotelKeeperImplementation - Check returned
+HotelKeeperImplementation - payment made

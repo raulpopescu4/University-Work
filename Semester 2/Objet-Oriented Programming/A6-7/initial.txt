@@ -1,0 +1,10 @@
+Conference,Join us for a conference,2024,3,8,10,30,150,https://www.google.com
+Music,Experience jazz music,2024,3,9,14,5,200,https://www.google.com
+Tech Expo 2024,Explore the latest in technology,2024,1,10,18,6,300,https://www.google.com
+Charity Gala Dinner,Support a noble cause,2024,5,11,11,45,100,https://www.google.com
+Art Exhibition,Discover contemporary art,2024,3,12,19,30,80,https://www.google.com
+Fitness Bootcamp,Get fit and stay healthy,2024,7,13,16,15,50,https://www.google.com
+Food Festival,Savor the flavors of diverse cuisines,2024,3,14,13,10,250,https://www.google.com
+Business Networking Mixer,Expand your professional network,2024,7,15,20,40,120,https://www.google.com
+Film Screening,Experience thought-provoking indie films,2024,9,16,9,45,90,https://www.google.com
+Book Launch,Meet the author,2024,10,17,17,30,80,https://www.google.com

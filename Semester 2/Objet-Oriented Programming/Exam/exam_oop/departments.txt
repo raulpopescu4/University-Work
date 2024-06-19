@@ -1,0 +1,4 @@
+IT,Handles all software and hardware issues
+HR,Responsible for recruitment and employee relations
+Marketing,Manages marketing campaigns and brand management
+Finance,Oversees company financial planning and budget management

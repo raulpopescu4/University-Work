@@ -1,0 +1,115 @@
+# Compiled source files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.obj
+*.pyc
+*.pyo
+*.pdb
+
+# C++ specific
+*.d
+*.su
+*.idb
+*.pdb
+*.ipch
+*.aps
+*.pch
+*.ilk
+*.sbr
+*.sdf
+*.opensdf
+*.ncb
+*.user
+*.suo
+*.opendb
+*.tlog
+*.log
+*.vspscc
+*.vssscc
+*.vspx
+*.iobj
+*.ipdb
+*.pgc
+*.pgd
+.vscode/
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vscode/
+build/
+Debug/
+Release/
+x64/
+ipch/
+.vs/
+.idea/
+
+# CLion
+cmake-build-*/
+.idea/
+.vscode/
+*.iml
+*.iws
+*.swo
+*.swp
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+Testing/
+Makefile
+cmake_install.cmake
+CTestTestfile.cmake
+*.cmake
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# JetBrains
+.idea/
+*.iml
+out/
+
+# Qt Creator
+*.autosave
+*.user
+*.user.*
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+*.qrc
+*.qmlc
+*.jsc
+*.cpp.o
+*.cpp.obj
+*.qmlc
+*.qml
+
+# CLion specific
+cmake-build-*/
+*.ipr
+*.iws
+*.swo
+*.swp
+
+# Other
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.userprefs

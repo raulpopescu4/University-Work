@@ -1,0 +1,5 @@
+Lungs | Pneumonia | fever, chills, cough
+Allergy | Sinusitis | fever, sore throat
+Allergy | Hives | red welts on the skin
+Heart | Angina | chest pressure, shortness of breath
+Heart | Heart attack | squeezing sensations of the chest, sweating, nausea
