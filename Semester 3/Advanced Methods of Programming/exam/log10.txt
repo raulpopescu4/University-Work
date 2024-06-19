@@ -1,0 +1,533 @@
+Program state ID: 1
+Execution stack: 
+[(int v| (Reference(int) a| (v=10| (HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a))))))))]
+Symbols tables: 
+[{}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(Reference(int) a| (v=10| (HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a))))))), int v]
+Symbols tables: 
+[{}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(Reference(int) a| (v=10| (HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a))))))), int v]
+Symbols tables: 
+[{}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(Reference(int) a| (v=10| (HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a)))))))]
+Symbols tables: 
+[{v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(Reference(int) a| (v=10| (HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a)))))))]
+Symbols tables: 
+[{v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(v=10| (HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a)))))), Reference(int) a]
+Symbols tables: 
+[{v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(v=10| (HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a)))))), Reference(int) a]
+Symbols tables: 
+[{v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(v=10| (HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a))))))]
+Symbols tables: 
+[{a=(int*) 0, v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(v=10| (HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a))))))]
+Symbols tables: 
+[{a=(int*) 0, v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a))))), v=10]
+Symbols tables: 
+[{a=(int*) 0, v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a))))), v=10]
+Symbols tables: 
+[{a=(int*) 0, v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a)))))]
+Symbols tables: 
+[{a=(int*) 0, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(HeapAllocation(a, 22)| (CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a)))))]
+Symbols tables: 
+[{a=(int*) 0, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a)))), HeapAllocation(a, 22)]
+Symbols tables: 
+[{a=(int*) 0, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a)))), HeapAllocation(a, 22)]
+Symbols tables: 
+[{a=(int*) 0, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a))))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))| (Print(v)| Print(HeapRead(a))))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(Print(v)| Print(HeapRead(a))), CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(Print(v)| Print(HeapRead(a))), CreateThread((HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a))))))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(Print(v)| Print(HeapRead(a)))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a)))))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[(Print(v)| Print(HeapRead(a)))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(HeapWrite(a, 30)| (v=32| (Print(v)| Print(HeapRead(a)))))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[Print(HeapRead(a)), Print(v)]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(v=32| (Print(v)| Print(HeapRead(a)))), HeapWrite(a, 30)]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[Print(HeapRead(a)), Print(v)]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(v=32| (Print(v)| Print(HeapRead(a)))), HeapWrite(a, 30)]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{1=22}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[Print(HeapRead(a))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[10]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(v=32| (Print(v)| Print(HeapRead(a))))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[10]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[Print(HeapRead(a))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[10]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(v=32| (Print(v)| Print(HeapRead(a))))]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[10]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 1
+Execution stack: 
+[]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[10, 30]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| Print(HeapRead(a))), v=32]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[10, 30]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| Print(HeapRead(a))), v=32]
+Symbols tables: 
+[{a=(int*) 1, v=10}]
+Output values: 
+[10, 30]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| Print(HeapRead(a)))]
+Symbols tables: 
+[{a=(int*) 1, v=32}]
+Output values: 
+[10, 30]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| Print(HeapRead(a)))]
+Symbols tables: 
+[{a=(int*) 1, v=32}]
+Output values: 
+[10, 30]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[Print(HeapRead(a)), Print(v)]
+Symbols tables: 
+[{a=(int*) 1, v=32}]
+Output values: 
+[10, 30]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[Print(HeapRead(a)), Print(v)]
+Symbols tables: 
+[{a=(int*) 1, v=32}]
+Output values: 
+[10, 30]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[Print(HeapRead(a))]
+Symbols tables: 
+[{a=(int*) 1, v=32}]
+Output values: 
+[10, 30, 32]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[Print(HeapRead(a))]
+Symbols tables: 
+[{a=(int*) 1, v=32}]
+Output values: 
+[10, 30, 32]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}
+Program state ID: 2
+Execution stack: 
+[]
+Symbols tables: 
+[{a=(int*) 1, v=32}]
+Output values: 
+[10, 30, 32, 30]
+File table: 
+{}
+Heap table: 
+{1=30}
+Procedures table: 
+{}

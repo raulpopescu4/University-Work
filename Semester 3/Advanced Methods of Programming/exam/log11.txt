@@ -1,0 +1,936 @@
+Program state ID: 2
+Execution stack: 
+[(int v| (int w| (v=2| (w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))))))))]
+Symbols tables: 
+[{}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(int w| (v=2| (w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))))))), int v]
+Symbols tables: 
+[{}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(int w| (v=2| (w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))))))), int v]
+Symbols tables: 
+[{}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(int w| (v=2| (w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))))))]
+Symbols tables: 
+[{v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(int w| (v=2| (w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))))))]
+Symbols tables: 
+[{v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(v=2| (w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))))), int w]
+Symbols tables: 
+[{v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(v=2| (w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))))), int w]
+Symbols tables: 
+[{v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(v=2| (w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))))))]
+Symbols tables: 
+[{v=0, w=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(v=2| (w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))))))]
+Symbols tables: 
+[{v=0, w=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))))), v=2]
+Symbols tables: 
+[{v=0, w=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))))), v=2]
+Symbols tables: 
+[{v=0, w=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))))]
+Symbols tables: 
+[{v=2, w=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(w=5| (Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))))]
+Symbols tables: 
+[{v=2, w=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))), w=5]
+Symbols tables: 
+[{v=2, w=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))), w=5]
+Symbols tables: 
+[{v=2, w=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))))]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Call sum [v*10, w]| (Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))))]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Call sum [v*10, w]]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Call sum [v*10, w]]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, (int v| (v=a+b| Print(v)))]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, (int v| (v=a+b| Print(v)))]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, (v=a+b| Print(v)), int v]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, (v=a+b| Print(v)), int v]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, (v=a+b| Print(v))]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, (v=a+b| Print(v))]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, Print(v), v=a+b]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, Print(v), v=a+b]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, Print(v)]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return, Print(v)]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Output values: 
+[]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Output values: 
+[25]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))), Return]
+Symbols tables: 
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Output values: 
+[25]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[(Print(v)| CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))))]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))), Print(v)]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[CreateThread((Call product [v, w]| CreateThread(Call sum [v, w]))), Print(v)]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[CreateThread((Call product [v, w]| CreateThread(Call sum [v, w])))]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 2
+Execution stack: 
+[]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[(Call product [v, w]| CreateThread(Call sum [v, w]))]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[(Call product [v, w]| CreateThread(Call sum [v, w]))]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Call product [v, w]]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Call product [v, w]]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, (int v| (v=a*b| Print(v)))]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, (int v| (v=a*b| Print(v)))]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, (v=a*b| Print(v)), int v]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, (v=a*b| Print(v)), int v]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, (v=a*b| Print(v))]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, (v=a*b| Print(v))]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, Print(v), v=a*b]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, Print(v), v=a*b]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, Print(v)]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=10}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return, Print(v)]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=10}]
+Output values: 
+[25, 2]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=10}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w]), Return]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=10}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w])]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[CreateThread(Call sum [v, w])]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 3
+Execution stack: 
+[]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Call sum [v, w]]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Call sum [v, w]]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, (int v| (v=a+b| Print(v)))]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, (int v| (v=a+b| Print(v)))]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, (v=a+b| Print(v)), int v]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, (v=a+b| Print(v)), int v]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, (v=a+b| Print(v))]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, (v=a+b| Print(v))]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, Print(v), v=a+b]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, Print(v), v=a+b]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, Print(v)]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return, Print(v)]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Output values: 
+[25, 2, 10]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Output values: 
+[25, 2, 10, 7]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[Return]
+Symbols tables: 
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Output values: 
+[25, 2, 10, 7]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
+Program state ID: 4
+Execution stack: 
+[]
+Symbols tables: 
+[{v=2, w=5}]
+Output values: 
+[25, 2, 10, 7]
+File table: 
+{}
+Heap table: 
+{}
+Procedures table: 
+{product=[a, b]=(int v| (v=a*b| Print(v))), sum=[a, b]=(int v| (v=a+b| Print(v)))}
