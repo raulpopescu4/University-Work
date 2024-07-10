@@ -10,7 +10,7 @@ This project is an Android mobile application developed as part of the coursewor
 
 ### ufc-app
 
-The **ufc-app** is part of the Systems for Design and Implementation course. It is a simple web application developed using *Node.js* for the server-side and *React* for the front end. It has two entities with a one-to-many relationship and CRUD functionalities for them.
+The **ufc-app** is part of the Systems for Design and Implementation course. It is a simple web application developed using *Node.js* for the server-side and *React* for the client-side. It has two entities with a one-to-many relationship and CRUD functionalities for them.
 
 ### Object-Oriented Programming (OOP)
 
